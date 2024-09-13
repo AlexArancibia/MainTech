@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html,
+body,
+:root {
+  height:100%
+}
+
+@layer base {
+
+  h1 {
+    @apply text-2xl font-bold tracking-tight ;
+    @apply md:text-3xl lg:text-4xl; /* Responsivo: cambia el tamaño en pantallas medianas y grandes */
+  }
+
+  h2 {
+    @apply text-xl font-semibold tracking-normal ;
+    @apply md:text-2xl lg:text-2xl; /* Responsivo: cambia el tamaño en pantallas medianas y grandes */
+  }
+
+  h3 {
+    @apply text-lg font-medium tracking-normal ;
+    @apply md:text-lg lg:text-xl; /* Responsivo: cambia el tamaño en pantallas medianas y grandes */
+  }
+
+  h4 {
+    @apply text-base font-normal  ;
+    @apply md:text-base lg:text-base; /* Responsivo: cambia el tamaño en pantallas medianas y grandes */
+  }
+
+  :root {
+    --background:0 0% 100%; /* Azul claro */
+    --foreground:222.2 84% 4.9%; /* Azul oscuro */
+    --card:0 0% 100%; /* Azul claro */
+    --card-foreground:222.2 84% 4.9%; /* Azul oscuro */
+    --popover:0 0% 100%; /* Azul claro */
+    --popover-foreground:222.2 84% 4.9%; /* Azul oscuro */
+    --primary:222.2 47.4% 11.2%; /* Azul medio */
+    --primary-foreground:210 40% 98%; /* Azul muy oscuro */
+    --secondary:210 40% 96.1%; /* Verde medio */
+    --secondary-foreground:222.2 47.4% 11.2%; /* Azul oscuro */
+    --muted:210 40% 96.1%; /* Verde muy claro */
+    --muted-foreground:215.4 16.3% 46.9%; /* Azul medio */
+    --accent:210 40% 96.1%; /* Verde medio */
+    --accent-foreground:222.2 47.4% 11.2%; /* Azul oscuro */
+    --destructive:0 84.2% 60.2%; /* Rojo vibrante */
+    --destructive-foreground:210 40% 98%; /* Azul muy oscuro */
+    --border:214.3 31.8% 91.4%; /* Azul claro */
+    --input:214.3 31.8% 91.4%; /* Azul claro */
+    --ring:222.2 84% 4.9%; /* Azul medio */
+    --radius:0.5rem;
+    --chart-1:12 76% 61%; /* Azul claro */
+    --chart-2:173 58% 39%; /* Verde medio */
+    --chart-3:197 37% 24%; /* Azul oscuro */
+    --chart-4:43 74% 66%; /* Verde claro */
+    --chart-5:27 87% 67%; /* Azul pálido */
+}
+
+.dark {
+    --background:222.2 84% 4.9%; /* Azul muy oscuro */
+    --foreground:210 40% 98%; /* Azul muy claro */
+    --card:222.2 84% 4.9%; /* Azul muy oscuro */
+    --card-foreground:210 40% 98%; /* Azul muy claro */
+    --popover:222.2 84% 4.9%; /* Azul muy oscuro */
+    --popover-foreground:210 40% 98%; /* Azul muy claro */
+    --primary:210 40% 98%; /* Azul claro */
+    --primary-foreground:222.2 47.4% 11.2%; /* Azul muy oscuro */
+    --secondary:217.2 32.6% 17.5%; /* Verde oscuro */
+    --secondary-foreground:210 40% 98%; /* Azul muy claro */
+    --muted:217.2 32.6% 17.5%; /* Verde muy oscuro */
+    --muted-foreground:215 20.2% 65.1%; /* Azul medio */
+    --accent:217.2 32.6% 17.5%; /* Verde oscuro */
+    --accent-foreground:210 40% 98%; /* Azul muy claro */
+    --destructive:0 62.8% 30.6%; /* Rojo oscuro */
+    --destructive-foreground:210 40% 98%; /* Azul muy claro */
+    --border:217.2 32.6% 17.5%; /* Verde oscuro */
+    --input:217.2 32.6% 17.5%; /* Verde oscuro */
+    --ring:212.7 26.8% 83.9%; /* Azul pálido */
+    --chart-1:220 70% 50%; /* Azul medio */
+    --chart-2:160 60% 45%; /* Verde oscuro */
+    --chart-3:30 80% 55%; /* Azul oscuro */
+    --chart-4:280 65% 60%; /* Verde claro */
+    --chart-5:340 75% 55%; /* Azul pálido */
+}
+}
+
+.ql-container{
+  font-size: 15px !important;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
