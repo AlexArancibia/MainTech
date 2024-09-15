@@ -8,6 +8,7 @@ import CourseEnrollButton from "./_components/CourseEnrollButton";
 import { Separator } from "@/components/ui/separator";
 import { Preview } from "@/components/preview";
 import { File } from "lucide-react";
+import { CourseProgressButton } from "./_components/CourseProgressButton";
 
  
 async function ChapterIdPage({
@@ -73,11 +74,13 @@ async function ChapterIdPage({
             <h3 className="text-2xl font-semibold mb-2">
               {chapter.title}
             </h3>
-            {purchase ? (
-              <div>
-                {}
-              </div>
-            ) : (
+                {purchase ? (
+                  <CourseProgressButton
+                    chapterId={params.chapterId}
+                    courseId={params.courseId}
+                    nextChapterId={nextChapter?.id}
+                    isCompleted={!!userProgress?.isCompleted} />
+                  ) : (
               <CourseEnrollButton
                 courseId={params.courseId}
                 price={course.price!} />

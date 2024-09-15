@@ -33,7 +33,7 @@ function CourseProgress({
           colorByVariant[variant || "default"],
           sizeByVariant[size || "default"]
         )}>
-          {Math.round(value)}% Complete
+          {Math.round(value)}% Completed
         </p>
     </div>
   )

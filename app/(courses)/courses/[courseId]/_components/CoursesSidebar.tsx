@@ -40,8 +40,7 @@ async function CoursesSidebar({
         <h3>
           {course.title}
         </h3>  
-        {/* CORREGIR TRUE POR PURCHASEE*/}
-        {true && (
+        {purchase && (
           <div className="mt-10">
             <CourseProgress
               variant="success"
