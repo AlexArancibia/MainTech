@@ -51,7 +51,7 @@ function CreatePage() {
         <h1 className="text-2xl">
           Name your Course
         </h1>
-        <p>What would you like to name your course? Don't worry, you can change this later. </p>
+        <p>What would you like to name your course? Don&apos;t worry, you can change this later. </p>
         <Form {...form}>
           <form 
             onSubmit={form.handleSubmit(onSubmit)}
